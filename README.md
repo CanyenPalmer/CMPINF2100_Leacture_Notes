@@ -334,24 +334,30 @@ Week 11 transitioned from regression to **classification**, emphasizing **featur
 
 ---
 
-## Week 12 – Classification Metrics & ROC Analysis
+## Week 12 – Classification Metrics, ROC Analysis & Model Comparison
 
 **Overview**
 
-Week 12 focused on **evaluating classification models**, particularly logistic regression models trained in the previous week. It covered accuracy, confusion matrices, ROC curves, and the effect of thresholds on classification decisions and model performance.
+Week 12 focused on **evaluating and comparing classification models**, especially logistic regression. Building on the binary classification setup from Week 11, this week introduced practical tools for judging model quality: accuracy, confusion matrices, ROC curves, and comparisons across multiple models. The emphasis was on understanding the trade-offs created by different probability thresholds and how to choose models and cutoffs that align with real-world objectives.
 
 **Tech & Tools**
 
 - **Libraries:** `pandas`, `numpy`, `matplotlib.pyplot`, `seaborn`, `statsmodels.formula.api`
-- **Concepts:** binary classification pipeline, probability thresholds, confusion matrices, accuracy, ROC curves, trade-offs between sensitivity and specificity
+- **Concepts:**
+  - Binary classification workflow: from predicted probabilities to hard labels
+  - Accuracy and error decomposition with confusion matrices
+  - ROC curves and the trade-off between true positives and false positives
+  - Comparing multiple classification models on the same task
+  - Impact of different thresholds on performance metrics
 
 **Files in this week**
 
-- `week_12_binary_classification.csv` — Dataset used to evaluate binary classification models.
-- `week_12_logistic_classification.ipynb` — Applies logistic regression to the binary data and generates predicted probabilities.
-- `week_12_classification_accuracy.ipynb` — Computes and interprets accuracy for different classification thresholds.
-- `week_12_classification_confusion.ipynb` — Builds confusion matrices to understand types of classification errors.
-- `week_12_classification_roc.ipynb` — Plots ROC curves and discusses the trade-offs between true positive and false positive rates.
+- `week_12_binary_classification.csv` — Dataset used as the common ground for evaluating and comparing binary classification models.
+- `week_12_logistic_classification.ipynb` — Trains logistic regression models, generates predicted probabilities, and sets up the classification task for evaluation.
+- `week_12_classification_accuracy.ipynb` — Computes and analyzes classification accuracy under different probability thresholds, highlighting how model performance changes as the cutoff moves.
+- `week_12_classification_confusion.ipynb` — Builds confusion matrices to break down errors into true/false positives and true/false negatives, providing a more nuanced view than accuracy alone.
+- `week_12_classification_roc.ipynb` — Plots ROC curves and studies how sensitivity and specificity trade off across thresholds; introduces the idea of ranking models by their ROC behavior.
+- `week_12_classification_multiple_models.ipynb` — Compares multiple classification models (e.g., different feature sets or model specifications) on the same binary task using metrics and ROC-style evaluation to understand which modeling choices generalize best.
 
 ---
 
