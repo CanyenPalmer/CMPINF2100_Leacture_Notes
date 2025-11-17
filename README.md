@@ -79,6 +79,7 @@ Over the course of CMPINF 2100, I built a practical foundation in **data science
 - [Week 10 – Linear Regression & Model Comparison](#week-10--linear-regression--model-comparison)
 - [Week 11 – Feature Engineering & Logistic Regression Foundations](#week-11--feature-engineering--logistic-regression-foundations)
 - [Week 12 – Classification Metrics & ROC Analysis](#week-12--classification-metrics--roc-analysis)
+- [Week 13 – Cross-Validation & Logistic Regression with scikit-learn](#week-13--cross-validation--logistic-regression-with-scikit-learn)
 - [Final Summary & Reflections](#final-summary--reflections)
 
 ---
