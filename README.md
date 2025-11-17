@@ -361,6 +361,40 @@ Week 12 focused on **evaluating and comparing classification models**, especiall
 
 ---
 
+## Week 13 – Cross-Validation & Logistic Regression with scikit-learn
+
+**Overview**
+
+Week 13 focused on making classification models **more reliable and trustworthy** by introducing **cross-validation** and deepening practice with **logistic regression** in both `scikit-learn` and `statsmodels`. Building on the binary classification and evaluation tools from Weeks 11–12, this week emphasized how to estimate out-of-sample performance, avoid overfitting, and compare models more systematically using k-fold cross-validation.
+
+**Tech & Tools**
+
+- **Libraries**
+  - `pandas`, `numpy`
+  - `matplotlib.pyplot`, `seaborn`
+  - `scikit-learn`:
+    - `sklearn.linear_model.LogisticRegression`
+    - `sklearn.model_selection.train_test_split`
+    - `sklearn.model_selection.cross_val_score`
+  - `statsmodels` / `statsmodels.formula.api` for logistic regression with richer summaries
+
+- **Concepts**
+  - Train/test splits vs k-fold cross-validation
+  - Estimating generalization performance and reducing variance in evaluation
+  - Logistic regression in `scikit-learn` vs `statsmodels`
+  - Working with predicted probabilities, decision functions, and class labels
+  - Comparing models and feature sets using cross-validated scores
+
+**Files in this week**
+
+- `week_13_cv_intro.ipynb` — Conceptual and practical introduction to cross-validation, showing how different splits of the data can lead to different performance estimates and why averaging across folds provides a more stable view of model quality.
+- `week_13_sklearn_logistic.ipynb` — Uses `scikit-learn`’s `LogisticRegression` to fit binary classification models, generate predictions and predicted probabilities, and connect these outputs back to the evaluation metrics introduced in earlier weeks.
+- `week_13_cv_logistic_sklearn.ipynb` — Applies k-fold cross-validation to logistic regression in `scikit-learn`, demonstrating how to compute cross-validated accuracy (or other metrics) and interpret the distribution of scores across folds.
+- `week_13_cv_logistic_statsmodels.ipynb` — Bridges `statsmodels` and cross-validation by fitting logistic models in `statsmodels` while still evaluating them with a cross-validation-style workflow, highlighting the trade-off between rich statistical summaries and predictive validation.
+- `week_13_cv_sklearn_cross_val_score.ipynb` — Uses `sklearn.model_selection.cross_val_score` to streamline the cross-validation process, showing how to quickly compare model specifications or feature sets based on repeated, out-of-sample performance estimates.
+
+---
+
 ## Final Summary & Reflections
 
 Across these weeks, this course guided me from **basic Python and notebook usage** to **full EDA projects and model evaluation**. The notebooks in this repository demonstrate:
